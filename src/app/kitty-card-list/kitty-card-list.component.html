@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-12">
+    <label for="kittyInput">Kitty name: </label>
+    <input id="kittyInput" [(ngModel)]="kittyName">
+    <button type="button" class="btn btn-primary" (click)="onAddKitty()">Add Kitty</button>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <div class="col-xs-4" *ngFor="let kitty of kitties">
+    <app-kitty-card [kitty]="kitty"
+                    (kittyDelete)="onKittyDelete($event)"
+                    (click)="onKittySelect(kitty)"
+    ></app-kitty-card>
+  </div>
+</div>

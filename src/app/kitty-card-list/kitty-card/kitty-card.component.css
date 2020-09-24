@@ -1,0 +1,33 @@
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.card {
+  position: relative;
+  box-shadow: 4px 4px 10px 2px cornflowerblue;
+}
+
+.card > .align-middle {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: cornflowerblue;
+  border-radius:40%;
+  box-shadow: 4px 4px 10px 2px;
+}
+
+.card > div >  svg {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  right: 0.25em;
+  top: 0.25em;
+}
+
+.selected {
+  box-shadow: 4px 4px 10px 2px blue;
+}
